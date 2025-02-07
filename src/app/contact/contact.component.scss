@@ -1,0 +1,41 @@
+/* filepath: /c:/Users/grego/OneDrive/Documents/My Web Sites/my-portfolio-site/src/app/contact/contact.component.scss */
+.contact-section {
+  margin: 20px 0;
+}
+
+.contact-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section form div {
+  margin-bottom: 10px;
+}
+
+.contact-section form label {
+  margin-bottom: 5px;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.contact-section form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-section form button:hover {
+  background-color: #0056b3;
+}

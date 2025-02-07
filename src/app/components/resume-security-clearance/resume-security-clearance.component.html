@@ -1,0 +1,9 @@
+<div class="security-clearance-section">
+  <h2>Security Clearance</h2>
+  @for ( clearance of clearanceList; track clearance.level) {
+  <div>
+    <h3>{{ clearance.level }}</h3>
+    <p>{{ clearance.agency }}</p>
+  </div>
+  }
+ </div>

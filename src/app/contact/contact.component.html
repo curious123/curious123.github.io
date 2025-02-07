@@ -1,0 +1,27 @@
+<section class="contact-section">
+  <h2>Contact Me</h2>
+  <form [formGroup]="cFormData" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" formControlName="Fullname" />
+      <div *ngIf="cFormData.get('Fullname')?.invalid && cFormData.get('Fullname')?.touched">
+        Full Name is required.
+      </div>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="Email" />
+      <div *ngIf="cFormData.get('Email')?.invalid && cFormData.get('Email')?.touched">
+        Valid email is required.
+      </div>
+    </div>
+    <div>
+      <label for="comment">Comment:</label>
+      <textarea id="comment" formControlName="Comment"></textarea>
+      <div *ngIf="cFormData.get('Comment')?.invalid && cFormData.get('Comment')?.touched">
+        Comment is required.
+      </div>
+    </div>
+    <button type="submit" [disabled]="cFormData.invalid">Submit</button>
+  </form>
+</section>
